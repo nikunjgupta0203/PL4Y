@@ -1,0 +1,7 @@
+{
+  "name": "PL4Y",
+  "description": "Your Sport. Your People. Your PL4Y. A new way to build your sports identity, discover players and play more.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
