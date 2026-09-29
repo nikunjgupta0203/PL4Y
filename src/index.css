@@ -1,1 +1,69 @@
 @import "tailwindcss";
+
+:root {
+  --ground: oklch(0.165 0.010 128);
+  --ground-2: oklch(0.192 0.011 128);
+  --surface: oklch(0.232 0.012 128);
+  --surface-2: oklch(0.290 0.014 128);
+  --line: oklch(0.330 0.014 128);
+  --line-strong: oklch(0.430 0.016 128);
+  --ink: oklch(0.968 0.008 120);
+  --ink-2: oklch(0.720 0.010 120);
+  --ink-3: oklch(0.570 0.012 120);
+  --brand: oklch(0.900 0.190 118);
+  --brand-ink: oklch(0.200 0.055 118);
+  --brand-soft: oklch(0.315 0.060 118);
+  --brand-line: oklch(0.430 0.080 118);
+  --crit: oklch(0.680 0.165 27);
+  --r: 16px;
+}
+
+body {
+  background-color: var(--ground);
+  color: var(--ink);
+  font-family: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  overflow-x: hidden;
+}
+
+.font-heading {
+  font-family: 'Archivo', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  letter-spacing: -0.04em;
+}
+
+.font-mono {
+  font-family: 'DM Mono', monospace;
+}
+
+/* Custom slick dark scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: var(--ground);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--line);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--line-strong);
+}
+
+/* Hide scrollbar for clean horizontal swipe pills */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Subtle glow utility */
+.glow-brand {
+  box-shadow: 0 0 25px -4px rgba(196, 255, 26, 0.25);
+}
+
+.glow-brand-sm {
+  box-shadow: 0 0 12px -2px rgba(196, 255, 26, 0.35);
+}
